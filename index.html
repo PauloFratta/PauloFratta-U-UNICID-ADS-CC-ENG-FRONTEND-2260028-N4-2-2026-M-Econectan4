@@ -68,6 +68,112 @@
       </div>
     </section>
 
+    <!-- Carrossel -->
+    <section class="secao secao--clara" aria-labelledby="titulo-carrossel">
+      <div class="container">
+        <h2 id="titulo-carrossel">O EcoConecta em imagens</h2>
+
+        <div class="carrossel" role="region" aria-roledescription="carrossel" aria-label="Imagens do EcoConecta">
+          <div class="carrossel__trilho">
+            <figure class="carrossel__slide" id="slide-1">
+              <input class="carrossel__estado" type="radio" name="eco-carrossel" id="controle-1" checked aria-label="Slide 1 de 4">
+              <img class="carrossel__imagem"
+                   src="img/carrossel-coleta-seletiva.svg"
+                   alt="Ilustração de uma pessoa colocando papel na lixeira azul, ao lado das lixeiras vermelha de plástico, verde de vidro e amarela de metal."
+                   width="560" height="440">
+              <figcaption class="carrossel__legenda">A coleta seletiva separa papel, plástico, vidro e metal antes de o material chegar à cooperativa.</figcaption>
+            </figure>
+
+            <figure class="carrossel__slide" id="slide-2">
+              <input class="carrossel__estado" type="radio" name="eco-carrossel" id="controle-2" aria-label="Slide 2 de 4">
+              <img class="carrossel__imagem"
+                   src="img/carrossel-cooperativa.svg"
+                   alt="Ilustração de três catadoras e catadores diante de um galpão de cooperativa, com sacolas e um carrinho de papel, plástico e metal."
+                   width="560" height="440">
+              <figcaption class="carrossel__legenda">Na cooperativa, catadoras e catadores transformam o material separado em renda.</figcaption>
+            </figure>
+
+            <figure class="carrossel__slide" id="slide-3">
+              <input class="carrossel__estado" type="radio" name="eco-carrossel" id="controle-3" aria-label="Slide 3 de 4">
+              <img class="carrossel__imagem"
+                   src="img/carrossel-ponto-verde.svg"
+                   alt="Ilustração de um Ponto Verde no bairro: caixa verde com uma folha, em frente a uma escola, e uma pessoa deixando uma sacola de recicláveis."
+                   width="560" height="440">
+              <figcaption class="carrossel__legenda">O Ponto Verde no Bairro recebe recicláveis de moradores, escolas e comércios.</figcaption>
+            </figure>
+
+            <figure class="carrossel__slide" id="slide-4">
+              <input class="carrossel__estado" type="radio" name="eco-carrossel" id="controle-4" aria-label="Slide 4 de 4">
+              <img class="carrossel__imagem"
+                   src="img/carrossel-oficina-escola.svg"
+                   alt="Ilustração de uma oficina do Recicla na Escola: uma professora e duas crianças diante de um quadro com papel, plástico, vidro e o símbolo da reciclagem."
+                   width="560" height="440">
+              <figcaption class="carrossel__legenda">O Recicla na Escola ensina crianças e jovens a separar o resíduo e a consumir com consciência.</figcaption>
+            </figure>
+          </div>
+
+          <div class="carrossel__controles">
+            <label class="carrossel__seta carrossel__seta--anterior carrossel__seta--1" for="controle-4">
+              <span aria-hidden="true">Anterior</span>
+              <span class="sr-only">Slide anterior</span>
+            </label>
+            <label class="carrossel__seta carrossel__seta--anterior carrossel__seta--2" for="controle-1">
+              <span aria-hidden="true">Anterior</span>
+              <span class="sr-only">Slide anterior</span>
+            </label>
+            <label class="carrossel__seta carrossel__seta--anterior carrossel__seta--3" for="controle-2">
+              <span aria-hidden="true">Anterior</span>
+              <span class="sr-only">Slide anterior</span>
+            </label>
+            <label class="carrossel__seta carrossel__seta--anterior carrossel__seta--4" for="controle-3">
+              <span aria-hidden="true">Anterior</span>
+              <span class="sr-only">Slide anterior</span>
+            </label>
+
+            <div class="carrossel__indicadores">
+              <label class="carrossel__indicador carrossel__indicador--1" for="controle-1">
+                <span aria-hidden="true">1</span>
+                <span class="sr-only">Ir para o slide 1 de 4</span>
+                <span class="carrossel__atual">, slide atual</span>
+              </label>
+              <label class="carrossel__indicador carrossel__indicador--2" for="controle-2">
+                <span aria-hidden="true">2</span>
+                <span class="sr-only">Ir para o slide 2 de 4</span>
+                <span class="carrossel__atual">, slide atual</span>
+              </label>
+              <label class="carrossel__indicador carrossel__indicador--3" for="controle-3">
+                <span aria-hidden="true">3</span>
+                <span class="sr-only">Ir para o slide 3 de 4</span>
+                <span class="carrossel__atual">, slide atual</span>
+              </label>
+              <label class="carrossel__indicador carrossel__indicador--4" for="controle-4">
+                <span aria-hidden="true">4</span>
+                <span class="sr-only">Ir para o slide 4 de 4</span>
+                <span class="carrossel__atual">, slide atual</span>
+              </label>
+            </div>
+
+            <label class="carrossel__seta carrossel__seta--proximo carrossel__seta--1" for="controle-2">
+              <span aria-hidden="true">Próximo</span>
+              <span class="sr-only">Próximo slide</span>
+            </label>
+            <label class="carrossel__seta carrossel__seta--proximo carrossel__seta--2" for="controle-3">
+              <span aria-hidden="true">Próximo</span>
+              <span class="sr-only">Próximo slide</span>
+            </label>
+            <label class="carrossel__seta carrossel__seta--proximo carrossel__seta--3" for="controle-4">
+              <span aria-hidden="true">Próximo</span>
+              <span class="sr-only">Próximo slide</span>
+            </label>
+            <label class="carrossel__seta carrossel__seta--proximo carrossel__seta--4" for="controle-1">
+              <span aria-hidden="true">Próximo</span>
+              <span class="sr-only">Próximo slide</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Sobre a causa -->
     <section class="secao" aria-labelledby="titulo-causa">
       <div class="container causa">

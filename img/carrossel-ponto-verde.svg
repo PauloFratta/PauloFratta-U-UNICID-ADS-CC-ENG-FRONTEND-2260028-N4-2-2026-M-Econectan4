@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" width="560" height="440">
+  <title>Ponto Verde de entrega volunt&#225;ria no bairro</title>
+  <circle cx="280" cy="210" r="200" fill="#E3EFE8"/>
+  <circle cx="430" cy="84" r="28" fill="#F2C89A"/>
+  <rect x="40" y="372" width="480" height="10" rx="5" fill="#12233A" opacity="0.15"/>
+
+  <rect x="70" y="168" width="150" height="150" rx="8" fill="#FFFDF8" stroke="#12233A" stroke-width="6"/>
+  <polygon points="62,168 145,108 228,168" fill="#0E5C46"/>
+  <rect x="118" y="230" width="42" height="88" rx="4" fill="#12775A"/>
+  <rect x="86" y="196" width="36" height="28" rx="3" fill="#E3EFE8" stroke="#12233A" stroke-width="4"/>
+  <rect x="168" y="196" width="36" height="28" rx="3" fill="#E3EFE8" stroke="#12233A" stroke-width="4"/>
+
+  <path d="M250 300 C250 250 300 230 330 250 C360 230 410 250 410 300 V372 H250 Z" fill="#12775A"/>
+  <rect x="286" y="214" width="88" height="22" rx="6" fill="#0E5C46"/>
+  <path d="M318 292 C318 274 330 266 338 278 C346 266 358 274 358 292 C358 308 338 322 338 322 C338 322 318 308 318 292 Z" fill="#F5F3EC"/>
+
+  <g>
+    <circle cx="214" cy="250" r="18" fill="#F2C89A"/>
+    <path d="M196 274 h36 v70 h-14 l-4 28 h-10 l6 -28 h-14 z" fill="#A84612"/>
+    <path d="M228 290 h30 l-4 22 h-18 z" fill="#E5B80B"/>
+  </g>
+
+  <path d="M460 372 C460 320 492 300 508 292 C506 330 488 356 460 372 Z" fill="#12775A"/>
+</svg>
