@@ -1,0 +1,43 @@
+---
+description: Acessibilidade WCAG AA do EcoConecta. Use ao criar ou revisar HTML, CSS, mídia, formulário ou contraste.
+alwaysApply: false
+---
+
+# Acessibilidade — EcoConecta
+
+## 1. Objetivo
+
+Garantir que qualquer pessoa use o site pelo teclado, por leitor de tela ou com pouca visão, no nível AA da WCAG 2.2.
+
+## 2. Contexto
+
+A home já traz link de pular conteúdo (`.pular-conteudo`), foco laranja de 3px, classe `.sr-only` e redução de movimento. A página `acessibilidade.html` deve descrever essas medidas sem prometer recurso que o código não tem.
+
+## 3. Regras
+
+- Ordem do DOM é a ordem de leitura. Não dependa só de cor para informar estado.
+- Foco visível em link, botão e campo. Não remova `outline` sem substituto de contraste equivalente.
+- Texto alternativo descreve a função da imagem. Figura da galeria usa `figure` e `figcaption`.
+- Vídeo ou áudio em `midia.html` precisa de legenda ou transcrição no próprio HTML.
+- Erro de formulário fica associado ao campo (`aria-describedby` ou `aria-invalid`), em texto, não só na cor.
+- Alvo clicável com área confortável (cerca de 44px no toque) e texto de link que faz sentido fora da frase (“Saiba mais sobre o Ponto Verde”, não só “clique aqui”).
+- Respeite o bloco `prefers-reduced-motion` já existente.
+
+## 4. Exemplo
+
+```html
+<a class="link-seta" href="projetos.html#ponto-verde">
+  Saiba mais<span class="sr-only"> sobre o Ponto Verde no Bairro</span>
+</a>
+```
+
+## 5. Erros a evitar
+
+- Informação só em cor (vermelho = erro, sem texto).
+- `tabindex` positivo ou elemento clicável que não é link nem botão.
+- Captcha, texto em imagem ou conteúdo que pisca.
+- `autoplay` de mídia com som.
+
+## 6. Perguntas
+
+Se não houver texto alternativo, legenda ou rótulo definido, pergunte. Não invente uma descrição vaga para “cumprir” a regra.

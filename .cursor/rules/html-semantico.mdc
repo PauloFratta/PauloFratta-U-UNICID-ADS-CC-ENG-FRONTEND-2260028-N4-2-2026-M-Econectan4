@@ -1,0 +1,46 @@
+---
+description: HTML5 semântico das páginas do EcoConecta, alinhado ao index.html.
+globs: "**/*.html"
+alwaysApply: false
+---
+
+# HTML semântico — EcoConecta
+
+## 1. Objetivo
+
+Cada página nova repete a estrutura acessível da home, para o site inteiro funcionar igual no teclado e no leitor de tela.
+
+## 2. Contexto
+
+HTML5 puro, `lang="pt-BR"`. Estilo só por `css/style.css`. A home já define o miolo: link de pular conteúdo, `header.cabecalho`, `main#conteudo`, `footer.rodape`.
+
+## 3. Regras
+
+- Copie o `<head>` mínimo, o link “Pular para o conteúdo principal”, o cabeçalho, o menu e o rodapé de `index.html`.
+- Ajuste `aria-current="page"` para a página aberta e o `<title>` no formato `EcoConecta | Nome da página`.
+- Um único `<h1>` por página. Cada `<section>` tem `aria-labelledby` apontando para o `id` do seu `<h2>`.
+- Use `header`, `nav`, `main`, `section`, `article`, `figure`, `address` e `footer`. Não substitua esses elementos por `div`.
+- Toda `img` tem `alt` que descreve a informação da imagem. Ícone decorativo fica com `aria-hidden="true"`.
+- Formulário: cada controle com `label` associado por `for`/`id`, campos obrigatórios com `required` e `aria-required="true"`.
+- Data de notícia em `<time datetime="AAAA-MM-DD">`.
+
+## 4. Exemplo
+
+```html
+<section class="secao" aria-labelledby="titulo-projetos">
+  <div class="container">
+    <h2 id="titulo-projetos">Projetos em destaque</h2>
+  </div>
+</section>
+```
+
+## 5. Erros a evitar
+
+- Segundo `<h1>`, título só com estilo ou seção sem nome acessível.
+- `alt=""` em imagem que traz conteúdo, ou `alt` genérico (“imagem”, “foto”).
+- CSS ou JavaScript inline. Vários arquivos de estilo.
+- Menu diferente do da home ou link para página que não existe no plano.
+
+## 6. Perguntas
+
+Na dúvida sobre o texto, a imagem ou se a página está no escopo, pergunte antes de criar o arquivo.

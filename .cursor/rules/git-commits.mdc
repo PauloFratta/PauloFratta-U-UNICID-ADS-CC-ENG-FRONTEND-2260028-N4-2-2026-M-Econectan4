@@ -1,0 +1,40 @@
+---
+description: Mensagens de commit do EcoConecta. Usar só quando a tarefa for criar um commit ou quando a regra for citada com @git-commits.
+alwaysApply: false
+---
+
+# Commits — EcoConecta
+
+## 1. Objetivo
+
+Deixar um histórico curto e legível, que sirva de evidência do processo da equipe.
+
+## 2. Contexto
+
+Repositório Git do trabalho acadêmico. Uma branch por tarefa (`feat/galeria`, `fix/contato`). Commit só quando a equipe pedir.
+
+## 3. Regras
+
+- Mensagem em português, no imperativo, com o tipo e o porquê: `feat: adiciona galeria com texto alternativo`.
+- Tipos: `feat` (página ou recurso), `fix` (correção), `style` (só aparência), `docs` (plano ou regra), `chore` (configuração).
+- Um commit por mudança coerente. Não misture página nova com refactor do CSS inteiro.
+- Não use `--no-verify`, `--amend` ou push forçado, a menos que a equipe peça.
+- Não versione `.env`, chave, token ou dado pessoal.
+
+## 4. Exemplo
+
+```
+feat: publica a página de projetos com três cards
+
+A home já apontava para projetos.html sem destino.
+```
+
+## 5. Erros a evitar
+
+- Mensagens vazias de contexto: “update”, “ajustes”, “código fonte”.
+- Commit de arquivo gerado, `node_modules` ou segredo.
+- Vários assuntos não relacionados no mesmo commit.
+
+## 6. Perguntas
+
+Se não estiver claro o que entra no commit, mostre o `git status` e pergunte antes de gravar.

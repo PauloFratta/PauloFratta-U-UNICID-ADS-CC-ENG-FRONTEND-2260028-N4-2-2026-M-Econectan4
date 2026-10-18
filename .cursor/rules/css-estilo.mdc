@@ -1,0 +1,50 @@
+---
+description: Padrões de CSS do EcoConecta. Variáveis, mobile-first e classes BEM em português.
+globs: "**/*.css"
+alwaysApply: false
+---
+
+# CSS — EcoConecta
+
+## 1. Objetivo
+
+Manter uma única folha de estilo, com a mesma cara em todas as páginas.
+
+## 2. Contexto
+
+Tudo vive em `css/style.css`. Cores e medidas estão em `:root`. A base vale para celular; tablet começa em 768px e desktop em 1024px.
+
+## 3. Regras
+
+- Reutilize as variáveis: `--cor-verde` `#12775A`, `--cor-escura` `#12233A`, `--cor-laranja` `#A84612`, `--cor-creme` `#F5F3EC`, `--cor-branco` `#FFFDF8`, `--largura-max`, `--raio`, `--sombra`.
+- Classe nova segue o BEM já usado, em português: bloco `.card`, elemento `.card__icone`, modificador `.botao--primario`.
+- Estilo novo entra na seção correspondente do arquivo (base, componentes ou media query), não no fim solto.
+- Layout com Flexbox ou Grid. Largura de leitura dentro de `.container`.
+- Não use `!important`, exceto no bloco que já zera animação em `prefers-reduced-motion`.
+- Contraste de texto sobre o fundo precisa continuar em nível AA.
+
+## 4. Exemplo
+
+```css
+.card__titulo {
+  color: var(--cor-escura);
+  margin: 0 0 0.5em;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+```
+
+## 5. Erros a evitar
+
+- Cor hexadecimal nova quando já existe variável.
+- Classe em inglês (`btn-primary`, `container-fluid`) ou nome genérico (`.box`, `.item1`).
+- Estilo escrito primeiro para desktop e só depois “corrigido” no celular.
+- Segundo arquivo CSS, framework ou estilo copiado de outra página para dentro do HTML.
+
+## 6. Perguntas
+
+Se a tela pedir uma cor, um componente ou um breakpoint que o arquivo ainda não tem, pergunte antes de criar.

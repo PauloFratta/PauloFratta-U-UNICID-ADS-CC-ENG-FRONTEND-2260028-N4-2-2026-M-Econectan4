@@ -1,0 +1,39 @@
+---
+description: Visão geral do EcoConecta. Escopo, stack e o que não inventar.
+alwaysApply: true
+---
+
+# EcoConecta — visão do projeto
+
+## 1. Objetivo
+
+Fixar o que este repositório é, para a IA não trocar a tecnologia nem o tema no meio da tarefa.
+
+## 2. Contexto
+
+ONG fictícia de reciclagem com inclusão de catadores. Disciplina de front-end, UNICID, 2026.2. Plano completo em `docs/readme.md`.
+
+Hoje o site é HTML5 e CSS3 na raiz (`index.html`, `css/style.css`, `img/`). Sem framework. Publicação prevista com Express no Railway e assistente EcoBot em `/api/assistente`.
+
+## 3. Regras
+
+- Leia `docs/readme.md` antes de criar página, rota ou dependência.
+- Mantenha cabeçalho, menu e rodapé iguais aos de `index.html`.
+- Textos em português do Brasil. Dados de contato e métricas são fictícios.
+- Não adicione React, Bootstrap, Tailwind nem biblioteca de CSS.
+- Não crie página fora da lista das 10 do plano sem perguntar.
+- Chave de API e dado pessoal real não entram no código nem no Git.
+
+## 4. Exemplo
+
+Páginas previstas: `index.html`, `sobre.html`, `projetos.html`, `impacto.html`, `acessibilidade.html`, `galeria.html`, `midia.html`, `noticias.html`, `contato.html`, `orcamento_hospedagem.html`.
+
+## 5. Erros a evitar
+
+- Inventar stack, nomes de página ou números de impacto diferentes dos já publicados.
+- Tratar o EcoConecta como aplicativo de outra causa.
+- Colocar a chave da IA no HTML ou no JavaScript do navegador.
+
+## 6. Perguntas
+
+Se a tarefa mudar o escopo, a pasta das páginas ou a stack, pergunte antes de editar.

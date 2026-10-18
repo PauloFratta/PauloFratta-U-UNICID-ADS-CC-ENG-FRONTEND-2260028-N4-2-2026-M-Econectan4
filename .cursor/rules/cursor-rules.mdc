@@ -1,0 +1,55 @@
+---
+description: Como criar ou editar regras do Cursor neste repositório.
+alwaysApply: true
+---
+
+# Onde e como escrever regras
+
+## 1. Objetivo
+
+Toda regra nova entra no formato que o Cursor carrega, com o roteiro de seis pontos da disciplina.
+
+## 2. Contexto
+
+Regras de projeto ficam versionadas em `.cursor/rules/`. O plano de contexto fica em `docs/readme.md` e não substitui uma regra.
+
+## 3. Regras
+
+- Salve apenas em `.cursor/rules/`, com nome em kebab-case e extensão `.mdc`.
+- Não coloque regra na raiz, em `docs/` nem em outra pasta. `docs/` guarda o plano de contexto.
+- Frontmatter com `description`, `globs` (quando for por tipo de arquivo) e `alwaysApply`.
+- `alwaysApply: true` só para regra curta usada em toda conversa. Regra de HTML ou CSS usa `globs`. Regra pontual, como commit, fica com `alwaysApply: false` e entra quando for citada com `@`.
+- Cada regra de código traz seis seções: objetivo, contexto, regras em tópicos, exemplo concreto, erros a evitar e quando perguntar.
+- Uma preocupação por arquivo. Menos de 80 linhas. Exemplo copiado do código real do EcoConecta.
+
+## 4. Exemplo
+
+```
+.cursor/rules/
+├── projeto-ecoconecta.mdc
+├── html-semantico.mdc
+├── css-estilo.mdc
+├── acessibilidade.mdc
+├── git-commits.mdc
+├── cursor-rules.mdc
+└── self-improvement.mdc
+```
+
+```markdown
+---
+description: Para que serve a regra
+globs: "**/*.html"
+alwaysApply: false
+---
+```
+
+## 5. Erros a evitar
+
+- Regra genérica, sem exemplo deste repositório.
+- Dois assuntos no mesmo arquivo (HTML e commit, por exemplo).
+- `alwaysApply: true` em regra longa.
+- Arquivo `.md` ou `.txt` no lugar de `.mdc`.
+
+## 6. Perguntas
+
+Se a regra nova valer sempre, só para alguns arquivos ou só quando alguém citar `@nome`, pergunte antes de escolher o frontmatter.

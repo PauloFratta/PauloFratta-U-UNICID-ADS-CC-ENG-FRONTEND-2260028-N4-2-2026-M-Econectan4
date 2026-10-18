@@ -1,0 +1,52 @@
+---
+description: Quando atualizar as regras do EcoConecta a partir de padrões novos ou erros repetidos.
+globs: "**/*"
+alwaysApply: true
+---
+
+# Melhoria contínua das regras
+
+## 1. Objetivo
+
+As regras acompanham o código. Padrão que se repete vira regra; regra que o código superou é atualizada ou marcada como obsoleta.
+
+## 2. Contexto
+
+Conjunto atual em `.cursor/rules/`. Exemplos devem citar arquivos reais (`index.html`, `css/style.css`), não um projeto genérico.
+
+## 3. Regras
+
+Atualize uma regra quando:
+
+- O mesmo padrão aparecer em 3 ou mais páginas (bloco de formulário, grade de notícias, figura da galeria).
+- O mesmo erro voltar: segundo `h1`, classe fora do BEM, cor fora das variáveis.
+- A revisão da equipe repetir o mesmo pedido.
+- Entrar JavaScript, `server.js` ou a pasta `public/`.
+
+Ao sugerir mudança:
+
+- Compare o código novo com a regra correspondente.
+- Mostre o diff da regra antes de salvar.
+- Prefira completar `html-semantico.mdc` ou `css-estilo.mdc` em vez de abrir outro arquivo para o mesmo assunto.
+- Marque padrão antigo como obsoleto e diga o que usar no lugar.
+- Siga `cursor-rules.mdc` para nome, pasta e os seis pontos.
+
+## 4. Exemplo
+
+Se três páginas repetirem o mesmo bloco:
+
+```html
+<p class="nota">Dados fictícios, criados para fins acadêmicos.</p>
+```
+
+inclua em `html-semantico.mdc` a obrigação de avisar quando o número for fictício.
+
+## 5. Erros a evitar
+
+- Criar regra por um caso isolado.
+- Exemplo inventado, de outra stack, ou desatualizado em relação ao `style.css`.
+- Apagar uma regra ainda usada sem dizer para onde o conteúdo foi.
+
+## 6. Perguntas
+
+Mostre a proposta e espere confirmação antes de gravar a regra nova ou a alteração.
