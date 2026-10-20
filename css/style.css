@@ -385,8 +385,33 @@ button:focus-visible {
   flex-grow: 1;
 }
 
+.card .link-seta {
+  margin-top: auto;
+}
+
 .card__icone {
   margin-bottom: 8px;
+}
+
+.card__imagem {
+  margin: -24px -24px 12px;
+  border-radius: var(--raio) var(--raio) 0 0;
+  overflow: hidden;
+  background: var(--cor-verde-claro);
+}
+
+.card__imagem img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* Âncoras da home (projetos.html#ponto-verde etc.) não ficam sob o cabeçalho fixo */
+#titulo-projetos,
+#ponto-verde,
+#catador-cidadao,
+#recicla-escola {
+  scroll-margin-top: 10rem;
 }
 
 /* Passos numerados */
@@ -557,6 +582,10 @@ button:focus-visible {
   .passos,
   .noticias {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card__imagem img {
+    height: 200px;
   }
 
   .rodape__interno {
