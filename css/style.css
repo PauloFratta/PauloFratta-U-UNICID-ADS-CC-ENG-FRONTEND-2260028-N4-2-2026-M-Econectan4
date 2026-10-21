@@ -362,6 +362,49 @@ button:focus-visible {
   color: #C9D6E3;
 }
 
+/* .nota nasceu para a faixa escura. No fundo claro, usa a cor de texto já existente. */
+.secao:not(.secao--escura) .nota {
+  color: var(--cor-texto);
+}
+
+/* Tabelas de resultado */
+.tabela-rolagem {
+  overflow-x: auto;
+  margin-top: 24px;
+  scroll-margin-top: 10rem;
+}
+
+.tabela-rolagem:focus {
+  outline: 3px solid var(--cor-laranja);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--cor-branco);
+}
+
+.tabela caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 700;
+  color: var(--cor-escura);
+  padding-bottom: 8px;
+}
+
+.tabela th,
+.tabela td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--cor-borda);
+  text-align: left;
+}
+
+.tabela th {
+  color: var(--cor-escura);
+}
+
 /* Cartões de projetos */
 .cards {
   display: grid;
@@ -576,6 +619,10 @@ button:focus-visible {
 
   .numeros {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tabela-rolagem {
+    overflow-x: visible;
   }
 
   .cards,
