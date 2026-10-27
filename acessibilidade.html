@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Medidas de acesso do EcoConecta: atalhos, teclado, leitor de tela, alto contraste, texto maior e inclusão na reciclagem.">
+  <meta name="author" content="Equipe EcoConecta">
+  <title>EcoConecta | Acessibilidade</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/ecoconecta.js" defer></script>
+</head>
+<body>
+
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <div class="cabecalho__marca">
+        <a class="logo" href="index.html" aria-label="EcoConecta – página inicial">
+          <svg class="logo__icone" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false">
+            <circle cx="24" cy="24" r="24" fill="#12775A"/>
+            <path d="M14 30 C14 18 24 12 35 12 C35 24 29 34 17 34 Z" fill="#F5F3EC"/>
+            <path d="M16 33 C21 26 26 21 31 17" stroke="#12775A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="logo__texto">Eco<strong>Conecta</strong></span>
+        </a>
+
+        <div class="acesso">
+          <p class="acesso__rotulo" id="rotulo-acesso">Acesso</p>
+          <div class="acesso__grupo" role="group" aria-labelledby="rotulo-acesso">
+            <button type="button" class="acesso__botao" data-recurso="contraste" aria-pressed="false" aria-label="Alto contraste">
+              <svg class="acesso__icone" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/>
+              </svg>
+              <span class="acesso__nome">Contraste</span>
+            </button>
+            <button type="button" class="acesso__botao" data-recurso="texto" aria-pressed="false" aria-label="Texto maior">
+              <svg class="acesso__icone" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                <text x="1" y="17" fill="currentColor" font-size="13" font-family="Segoe UI, Arial, sans-serif" font-weight="700">A+</text>
+              </svg>
+              <span class="acesso__nome">Texto</span>
+            </button>
+            <button type="button" class="acesso__botao" data-recurso="ouvir" aria-pressed="false" aria-label="Ouvir a página" data-nome-ligado="Parar" data-nome-desligado="Ouvir" data-rotulo-ligado="Parar a leitura" data-rotulo-desligado="Ouvir a página">
+              <svg class="acesso__icone" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                <path d="M4 9h3.5L12 5v14l-4.5-4H4z" fill="currentColor"/>
+                <path d="M15.5 9.2a4 4 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M17.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span class="acesso__nome">Ouvir</span>
+            </button>
+          </div>
+          <p class="sr-only" data-acesso-aviso aria-live="polite"></p>
+        </div>
+      </div>
+
+      <nav class="menu" aria-label="Menu principal">
+        <ul class="menu__lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html" aria-current="page">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <header class="secao secao--clara">
+      <div class="container">
+        <h1>Acessibilidade</h1>
+        <p>
+          Reciclagem e site precisam funcionar para todas as pessoas. Aqui estão
+          os recursos de acesso que o EcoConecta oferece hoje, como usá-los e
+          por que a inclusão importa agora.
+        </p>
+      </div>
+    </header>
+
+    <section class="secao" aria-labelledby="titulo-inclusao">
+      <div class="container">
+        <h2 id="titulo-inclusao">Por que a inclusão importa agora</h2>
+        <p>
+          Serviços, escolas e cidades estão na internet. Quem não consegue ler,
+          ouvir, enxergar ou operar um site fica de fora de informação, trabalho
+          e participação. A Lei Brasileira de Inclusão (Lei nº 13.146/2015)
+          garante o acesso à informação e à comunicação. O EcoConecta segue a
+          referência WCAG 2.2, nível AA, nas páginas já publicadas.
+        </p>
+        <p>
+          Inclusão, neste projeto, também é o trabalho de quem coleta. Catadoras
+          e catadores sustentam a reciclagem e, muitas vezes, seguem sem renda
+          justa, segurança ou reconhecimento. O EcoConecta, organização fictícia,
+          liga moradores, escolas e empresas às cooperativas para aproximar o
+          reciclável de quem vive dele — no espírito das ODS 11 (cidades
+          inclusivas) e 12 (consumo e produção responsáveis).
+        </p>
+        <p>
+          Um site acessível faz parte desse mesmo cuidado: uma pessoa que usa
+          leitor de tela encontra um Ponto Verde, quem navega só pelo teclado
+          chega aos projetos e quem precisa de mais contraste lê com conforto.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao secao--clara" aria-labelledby="titulo-recursos">
+      <div class="container">
+        <h2 id="titulo-recursos">Recursos disponíveis no site</h2>
+        <p>
+          A lista abaixo descreve o que o código faz hoje. Nada aqui depende de
+          um recurso que a página ainda não tem.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>Atalho para o conteúdo</h3>
+            <p>
+              O primeiro item do teclado é “Pular para o conteúdo principal”.
+              Ele fica oculto até receber foco e leva direto ao texto da página,
+              sem passar item por item do menu.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Teclado e foco visível</h3>
+            <p>
+              Links, botões e controles do carrossel e da galeria funcionam sem
+              mouse. O foco aparece com um contorno laranja de 3 pixels, para
+              não se perder na página.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Leitor de tela</h3>
+            <p>
+              O idioma é português do Brasil. Cada página tem um título, um único
+              h1 e seções nomeadas. Imagens têm texto alternativo. Trechos só
+              para leitor de tela explicam o destino de alguns links. A página
+              atual do menu é anunciada.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Menos movimento</h3>
+            <p>
+              Se o sistema operacional pede menos animação, o site desliga
+              transições, o salto do botão e a rolagem suave do carrossel.
+              Nenhum vídeo começa sozinho.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Imagens e vídeos</h3>
+            <p>
+              Fotos e ilustrações trazem alternativa em texto. Na galeria, cada
+              vídeo do YouTube tem um resumo na página e um link “Assistir no
+              YouTube”, caso o player não carregue. As legendas do YouTube são
+              pedidas em português.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Galeria com teclado</h3>
+            <p>
+              Os filtros anunciam quantas imagens ficaram visíveis. A imagem
+              ampliada fecha com a tecla Esc, e o foco vai para o botão Fechar.
+              Sem JavaScript, as fotos e os vídeos continuam na página.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Alto contraste</h3>
+            <p>
+              O ícone de meio círculo, no topo de cada página, deixa texto preto,
+              fundo branco e links sublinhados. Se o sistema já pede mais
+              contraste, o site reforça as cores mesmo com o botão desligado.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Texto maior</h3>
+            <p>
+              O ícone A+ aumenta a letra em cerca de 25%. Títulos, parágrafos e
+              botões crescem juntos, porque o site usa medidas relativas.
+              O zoom do navegador continua disponível.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Leitura em voz alta</h3>
+            <p>
+              O ícone de alto-falante lê o conteúdo principal em português, com
+              a voz do navegador. Nada começa sozinho. O mesmo botão, ou a tecla
+              Esc, interrompe a leitura. Sem JavaScript, ou se o navegador não
+              tiver voz, o texto continua na página.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-ajustar">
+      <div class="container">
+        <h2 id="titulo-ajustar">Ajustar a leitura</h2>
+        <p>
+          Os mesmos ícones ficam no topo de todas as páginas já publicadas.
+          Contraste e texto maior acompanham você neste navegador. A leitura
+          em voz alta vale só enquanto você estiver na página e não começa
+          sozinha. O botão acionado fica preenchido em verde e marcado como
+          pressionado.
+        </p>
+        <div class="botoes" role="group" aria-labelledby="titulo-ajustar">
+          <button type="button" class="botao botao--secundario recurso-botao" data-recurso="contraste" aria-pressed="false">
+            <svg class="acesso__icone" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/>
+            </svg>
+            <span class="acesso__nome">Alto contraste</span>
+          </button>
+          <button type="button" class="botao botao--secundario recurso-botao" data-recurso="texto" aria-pressed="false">
+            <svg class="acesso__icone" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <text x="1" y="17" fill="currentColor" font-size="13" font-family="Segoe UI, Arial, sans-serif" font-weight="700">A+</text>
+            </svg>
+            <span class="acesso__nome">Texto maior</span>
+          </button>
+          <button type="button" class="botao botao--secundario recurso-botao" data-recurso="ouvir" aria-pressed="false" data-nome-ligado="Parar leitura" data-nome-desligado="Ouvir a página">
+            <svg class="acesso__icone" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="M4 9h3.5L12 5v14l-4.5-4H4z" fill="currentColor"/>
+              <path d="M15.5 9.2a4 4 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M17.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="acesso__nome">Ouvir a página</span>
+          </button>
+        </div>
+        <p id="recurso-aviso" class="nota" data-acesso-aviso></p>
+        <noscript>
+          <p>
+            Contraste, texto maior e leitura em voz alta precisam de JavaScript.
+            O atalho, o foco visível, os textos alternativos e a redução de
+            movimento do sistema continuam valendo sem ele.
+          </p>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="secao secao--clara" aria-labelledby="titulo-uso">
+      <div class="container">
+        <h2 id="titulo-uso">Como usar</h2>
+        <ol class="passos">
+          <li class="passos__item">
+            <h3>Comece pelo teclado</h3>
+            <p>
+              Aperte Tab. O atalho “Pular para o conteúdo principal” aparece no
+              topo. Enter pula o menu. Shift+Tab volta. Enter ou Espaço ativa
+              o link ou o botão em foco.
+            </p>
+          </li>
+          <li class="passos__item">
+            <h3>Leia com um leitor de tela</h3>
+            <p>
+              Use os atalhos do seu leitor para saltar por títulos e regiões
+              (menu, conteúdo, rodapé). As imagens descrevem a cena no atributo
+              de texto alternativo, e a página do menu em que você está é marcada.
+            </p>
+          </li>
+          <li class="passos__item">
+            <h3>Ligue o contraste ou o texto maior</h3>
+            <p>
+              No topo, use o ícone de meio círculo ou o A+. Os mesmos botões
+              estão na seção “Ajustar a leitura”. Aperte de novo para desligar.
+              A escolha fica salva neste navegador. No Windows, o contraste do
+              sistema também pode ser pedido em Configurações, Acessibilidade,
+              Temas de contraste.
+            </p>
+          </li>
+          <li class="passos__item">
+            <h3>Ouça a página</h3>
+            <p>
+              Acione o ícone de alto-falante. O navegador lê o conteúdo
+              principal em voz alta. Acione de novo, ou aperte Esc, para parar.
+              A leitura não continua sozinha na página seguinte.
+            </p>
+          </li>
+          <li class="passos__item">
+            <h3>Reduza o movimento</h3>
+            <p>
+              No Windows: Configurações, Acessibilidade, Efeitos visuais e
+              desligue os efeitos de animação. No celular, use a opção de
+              reduzir movimento do sistema. O site obedece a esse pedido.
+            </p>
+          </li>
+          <li class="passos__item">
+            <h3>Feche a imagem ampliada</h3>
+            <p>
+              Na galeria, Enter abre a foto. Esc fecha e devolve o foco ao
+              botão Fechar. Se o JavaScript não carregar, a foto permanece
+              visível na grade, sem a ampliação.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-participar">
+      <div class="container">
+        <h2 id="titulo-participar">Inclusão também na reciclagem</h2>
+        <p>
+          Acesso digital e inclusão de catadores andam juntos: a informação só
+          ajuda se a pessoa consegue usá-la, e o reciclável só gera renda se
+          chega a quem trabalha com ele.
+        </p>
+        <div class="botoes">
+          <a class="botao botao--primario" href="projetos.html">Ver os projetos</a>
+          <a class="botao botao--secundario" href="galeria.html">Abrir a galeria</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div>
+        <p class="logo__texto">Eco<strong>Conecta</strong></p>
+        <p>Reciclagem com inclusão de catadores.</p>
+        <address>
+          Rua Exemplo, 100 – São Paulo, SP<br>
+          <a href="mailto:contato@ecoconecta.exemplo">contato@ecoconecta.exemplo</a><br>
+          <a href="tel:+5511900000000">(11) 90000-0000</a>
+        </address>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <p class="rodape__titulo">Navegue</p>
+        <ul class="rodape__links">
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="rodape__titulo">Projeto acadêmico</p>
+        <p>Site desenvolvido para a disciplina Desenvolvimento Front-end para Web – UNICID, 2026.</p>
+        <p>Organização e dados fictícios.</p>
+      </div>
+    </div>
+    <p class="rodape__copy">&copy; 2026 Equipe EcoConecta</p>
+  </footer>
+
+</body>
+</html>

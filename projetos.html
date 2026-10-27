@@ -7,6 +7,7 @@
   <meta name="author" content="Equipe EcoConecta">
   <title>EcoConecta | Projetos</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/ecoconecta.js" defer></script>
 </head>
 <body>
 
@@ -16,14 +17,44 @@
   <!-- ===================== CABEÇALHO ===================== -->
   <header class="cabecalho">
     <div class="container cabecalho__interno">
-      <a class="logo" href="index.html" aria-label="EcoConecta – página inicial">
-        <svg class="logo__icone" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false">
-          <circle cx="24" cy="24" r="24" fill="#12775A"/>
-          <path d="M14 30 C14 18 24 12 35 12 C35 24 29 34 17 34 Z" fill="#F5F3EC"/>
-          <path d="M16 33 C21 26 26 21 31 17" stroke="#12775A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-        </svg>
-        <span class="logo__texto">Eco<strong>Conecta</strong></span>
-      </a>
+      <div class="cabecalho__marca">
+        <a class="logo" href="index.html" aria-label="EcoConecta – página inicial">
+          <svg class="logo__icone" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false">
+            <circle cx="24" cy="24" r="24" fill="#12775A"/>
+            <path d="M14 30 C14 18 24 12 35 12 C35 24 29 34 17 34 Z" fill="#F5F3EC"/>
+            <path d="M16 33 C21 26 26 21 31 17" stroke="#12775A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="logo__texto">Eco<strong>Conecta</strong></span>
+        </a>
+
+        <div class="acesso">
+          <p class="acesso__rotulo" id="rotulo-acesso">Acesso</p>
+          <div class="acesso__grupo" role="group" aria-labelledby="rotulo-acesso">
+            <button type="button" class="acesso__botao" data-recurso="contraste" aria-pressed="false" aria-label="Alto contraste">
+              <svg class="acesso__icone" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/>
+              </svg>
+              <span class="acesso__nome">Contraste</span>
+            </button>
+            <button type="button" class="acesso__botao" data-recurso="texto" aria-pressed="false" aria-label="Texto maior">
+              <svg class="acesso__icone" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                <text x="1" y="17" fill="currentColor" font-size="13" font-family="Segoe UI, Arial, sans-serif" font-weight="700">A+</text>
+              </svg>
+              <span class="acesso__nome">Texto</span>
+            </button>
+            <button type="button" class="acesso__botao" data-recurso="ouvir" aria-pressed="false" aria-label="Ouvir a página" data-nome-ligado="Parar" data-nome-desligado="Ouvir" data-rotulo-ligado="Parar a leitura" data-rotulo-desligado="Ouvir a página">
+              <svg class="acesso__icone" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                <path d="M4 9h3.5L12 5v14l-4.5-4H4z" fill="currentColor"/>
+                <path d="M15.5 9.2a4 4 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M17.8 7a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span class="acesso__nome">Ouvir</span>
+            </button>
+          </div>
+          <p class="sr-only" data-acesso-aviso aria-live="polite"></p>
+        </div>
+      </div>
 
       <nav class="menu" aria-label="Menu principal">
         <ul class="menu__lista">
