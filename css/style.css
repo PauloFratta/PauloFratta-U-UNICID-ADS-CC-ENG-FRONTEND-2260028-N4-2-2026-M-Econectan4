@@ -1125,7 +1125,8 @@ button:focus-visible {
 .galeria__video-quadro {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 0;
+  padding-bottom: 56.25%;
   background: var(--cor-escura);
   border-radius: var(--raio);
   overflow: hidden;
@@ -1136,13 +1137,35 @@ button:focus-visible {
   background: var(--cor-verde-claro);
 }
 
-.galeria__video-quadro--local img {
+.galeria__video-quadro--local img,
+.galeria__video-quadro iframe {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  border: 0;
+}
+
+.galeria__video-quadro--local img {
   object-fit: cover;
   object-position: center;
+}
+
+.galeria__video .galeria__legenda a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+@supports (aspect-ratio: 1) {
+  .galeria__video-quadro {
+    height: auto;
+    padding-bottom: 0;
+    aspect-ratio: 16 / 9;
+  }
 }
 
 @media (min-width: 768px) {
