@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" width="560" height="440">
+  <title>Equipamento de proteção para catadoras e catadores</title>
+  <rect width="560" height="440" fill="#E3EFE8"/>
+  <circle cx="280" cy="200" r="170" fill="#FFFDF8"/>
+  <circle cx="280" cy="150" r="42" fill="#F2C89A"/>
+  <path d="M230 150 h100 v18 h-100 z" fill="#12233A"/>
+  <path d="M220 200 h120 l20 120 h-160 z" fill="#12775A"/>
+  <rect x="210" y="230" width="36" height="70" rx="10" fill="#F5F3EC" stroke="#0E5C46" stroke-width="4"/>
+  <rect x="314" y="230" width="36" height="70" rx="10" fill="#F5F3EC" stroke="#0E5C46" stroke-width="4"/>
+  <rect x="236" y="320" width="40" height="56" rx="6" fill="#12233A"/>
+  <rect x="284" y="320" width="40" height="56" rx="6" fill="#12233A"/>
+  <rect x="248" y="188" width="64" height="14" rx="4" fill="#A84612"/>
+  <text x="280" y="410" text-anchor="middle" fill="#0E5C46" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Catador Cidadão</text>
+</svg>

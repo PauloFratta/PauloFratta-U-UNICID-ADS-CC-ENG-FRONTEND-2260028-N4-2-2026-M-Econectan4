@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeria EcoConecta: imagens e momentos da coleta seletiva, cooperativas de catadores, Pontos Verdes e oficinas nas escolas.">
+  <meta name="author" content="Equipe EcoConecta">
+  <title>EcoConecta | Galeria</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/ecoconecta.js" defer></script>
+</head>
+<body>
+
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <a class="logo" href="index.html" aria-label="EcoConecta – página inicial">
+        <svg class="logo__icone" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="24" fill="#12775A"/>
+          <path d="M14 30 C14 18 24 12 35 12 C35 24 29 34 17 34 Z" fill="#F5F3EC"/>
+          <path d="M16 33 C21 26 26 21 31 17" stroke="#12775A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__texto">Eco<strong>Conecta</strong></span>
+      </a>
+
+      <nav class="menu" aria-label="Menu principal">
+        <ul class="menu__lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html" aria-current="page">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="destaque" aria-labelledby="titulo-destaque">
+      <div class="container destaque__interno">
+        <div class="destaque__texto">
+          <p class="selo">ODS 11 · ODS 12 · Economia solidária</p>
+          <h1 id="titulo-destaque">Galeria da coleta que inclui</h1>
+          <p class="destaque__descricao">
+            Fotos e ilustrações do caminho do reciclável: da casa à cooperativa,
+            do Ponto Verde à oficina na escola.
+          </p>
+          <div class="botoes">
+            <a class="botao botao--primario" href="#titulo-galeria">Ver a galeria</a>
+            <a class="botao botao--secundario" href="projetos.html">Conheça os projetos</a>
+          </div>
+        </div>
+        <figure class="destaque__imagem">
+          <img src="img/hero-coleta-seletiva.svg"
+               alt="Ilustração de quatro lixeiras da coleta seletiva, azul para papel, vermelha para plástico, verde para vidro e amarela para metal, sob o símbolo da reciclagem."
+               width="560" height="440">
+        </figure>
+      </div>
+    </section>
+
+    <section class="secao secao--clara galeria" id="galeria-conteudo" aria-labelledby="titulo-galeria">
+      <div class="container">
+        <h2 id="titulo-galeria">Momentos do EcoConecta</h2>
+        <p>
+          Use os filtros para explorar por tema. Cada imagem abre em ampliação
+          (teclado: Enter no link da figura; feche com o link Fechar).
+          As cenas e legendas são fictícias, criadas para fins acadêmicos.
+        </p>
+
+        <div class="galeria__painel">
+          <fieldset class="galeria__filtros">
+            <legend class="galeria__filtros-titulo">Filtrar por tema</legend>
+            <div class="galeria__filtros-lista">
+              <label class="galeria__filtro">
+                <input class="galeria__estado" type="radio" name="filtro-galeria" id="filtro-todos" checked>
+                Todos
+              </label>
+              <label class="galeria__filtro">
+                <input class="galeria__estado" type="radio" name="filtro-galeria" id="filtro-coleta">
+                Coleta seletiva
+              </label>
+              <label class="galeria__filtro">
+                <input class="galeria__estado" type="radio" name="filtro-galeria" id="filtro-cooperativas">
+                Cooperativas
+              </label>
+              <label class="galeria__filtro">
+                <input class="galeria__estado" type="radio" name="filtro-galeria" id="filtro-ponto-verde">
+                Ponto Verde
+              </label>
+              <label class="galeria__filtro">
+                <input class="galeria__estado" type="radio" name="filtro-galeria" id="filtro-escola">
+                Escolas
+              </label>
+              <label class="galeria__filtro">
+                <input class="galeria__estado" type="radio" name="filtro-galeria" id="filtro-cidade">
+                Cidade
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="galeria__grade">
+            <figure class="galeria__item" data-categoria="coleta">
+              <a class="galeria__link" href="#ampliar-1">
+                <img class="galeria__imagem galeria__imagem--foto"
+                     src="img/carrossel-coleta-seletiva.jpg"
+                     alt="Quatro lixeiras coloridas de coleta seletiva sobre a grama: vermelha, amarela, azul e verde."
+                     width="1280" height="853">
+                <span class="sr-only">Ampliar: lixeiras da coleta seletiva</span>
+              </a>
+              <figcaption class="galeria__legenda">Coleta seletiva separa papel, plástico, vidro e metal antes da cooperativa.</figcaption>
+            </figure>
+
+            <figure class="galeria__item" data-categoria="cooperativas">
+              <a class="galeria__link" href="#ampliar-2">
+                <img class="galeria__imagem"
+                     src="img/carrossel-cooperativa.svg"
+                     alt="Ilustração de três catadoras e catadores diante de um galpão de cooperativa, com sacolas e carrinho de materiais."
+                     width="560" height="440">
+                <span class="sr-only">Ampliar: cooperativa de catadores</span>
+              </a>
+              <figcaption class="galeria__legenda">Na cooperativa, o material separado vira renda digna.</figcaption>
+            </figure>
+
+            <figure class="galeria__item" data-categoria="ponto-verde">
+              <a class="galeria__link" href="#ampliar-3">
+                <img class="galeria__imagem galeria__imagem--foto"
+                     src="img/carrossel-ponto-verde.jpg"
+                     alt="Homem depositando garrafa de vidro em contêineres verdes de coleta, ao lado de lixeira azul."
+                     width="1280" height="853">
+                <span class="sr-only">Ampliar: Ponto Verde no Bairro</span>
+              </a>
+              <figcaption class="galeria__legenda">Ponto Verde no Bairro recebe recicláveis de moradores e comércios.</figcaption>
+            </figure>
+
+            <figure class="galeria__item" data-categoria="escola">
+              <a class="galeria__link" href="#ampliar-4">
+                <img class="galeria__imagem"
+                     src="img/carrossel-oficina-escola.svg"
+                     alt="Ilustração de oficina escolar: professora e duas crianças diante de um quadro sobre reciclagem."
+                     width="560" height="440">
+                <span class="sr-only">Ampliar: Recicla na Escola</span>
+              </a>
+              <figcaption class="galeria__legenda">Recicla na Escola ensina consumo consciente a crianças e jovens.</figcaption>
+            </figure>
+
+            <figure class="galeria__item" data-categoria="coleta">
+              <a class="galeria__link" href="#ampliar-5">
+                <img class="galeria__imagem"
+                     src="img/galeria-separacao-casa.svg"
+                     alt="Ilustração de casa com quatro recipientes de coleta seletiva na fachada e uma pessoa ao lado."
+                     width="560" height="440">
+                <span class="sr-only">Ampliar: separação em casa</span>
+              </a>
+              <figcaption class="galeria__legenda">Em casa, limpe e seque o material antes de levar ao Ponto Verde.</figcaption>
+            </figure>
+
+            <figure class="galeria__item" data-categoria="cooperativas">
+              <a class="galeria__link" href="#ampliar-6">
+                <img class="galeria__imagem"
+                     src="img/galeria-epi-catador.svg"
+                     alt="Ilustração de catador com capacete, luvas e uniforme, representando o projeto Catador Cidadão."
+                     width="560" height="440">
+                <span class="sr-only">Ampliar: Catador Cidadão</span>
+              </a>
+              <figcaption class="galeria__legenda">Catador Cidadão apoia capacitação e equipamentos de proteção.</figcaption>
+            </figure>
+
+            <figure class="galeria__item" data-categoria="cidade">
+              <a class="galeria__link" href="#ampliar-7">
+                <img class="galeria__imagem"
+                     src="img/galeria-mutirao.svg"
+                     alt="Ilustração de mutirão com três pessoas e lixeiras coloridas em uma praça."
+                     width="560" height="440">
+                <span class="sr-only">Ampliar: mutirão de limpeza</span>
+              </a>
+              <figcaption class="galeria__legenda">Mutirões reúnem voluntários para limpar praças e separar recicláveis.</figcaption>
+            </figure>
+
+            <figure class="galeria__item" data-categoria="cidade">
+              <a class="galeria__link" href="#ampliar-8">
+                <img class="galeria__imagem"
+                     src="img/galeria-cidade-verde.svg"
+                     alt="Ilustração de prédios urbanos com árvores e lixeiras da coleta seletiva na calçada."
+                     width="560" height="440">
+                <span class="sr-only">Ampliar: cidade e sustentabilidade</span>
+              </a>
+              <figcaption class="galeria__legenda">Cidades mais limpas dependem de coleta seletiva e de quem faz a triagem.</figcaption>
+            </figure>
+
+            <figure class="galeria__item" data-categoria="escola">
+              <a class="galeria__link" href="#ampliar-9">
+                <img class="galeria__imagem"
+                     src="img/galeria-oficina-reciclagem.svg"
+                     alt="Ilustração de quadro escolar com símbolo da reciclagem e crianças observando."
+                     width="560" height="440">
+                <span class="sr-only">Ampliar: oficina de reciclagem</span>
+              </a>
+              <figcaption class="galeria__legenda">Oficinas mostram na prática o destino de cada tipo de material.</figcaption>
+            </figure>
+
+            <figure class="galeria__item" data-categoria="ponto-verde">
+              <a class="galeria__link" href="#ampliar-10">
+                <img class="galeria__imagem"
+                     src="img/galeria-empresa-parceira.svg"
+                     alt="Ilustração de prédio empresarial e caminhão com caixas, sugerindo doação de equipamentos."
+                     width="560" height="440">
+                <span class="sr-only">Ampliar: empresa parceira</span>
+              </a>
+              <figcaption class="galeria__legenda">Empresas parceiras doam equipamentos e reforçam os Pontos Verdes.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <p class="nota">Imagens e legendas fictícias, criadas para fins acadêmicos.</p>
+      </div>
+    </section>
+
+    <!-- Lightboxes (âncoras :target) -->
+    <div class="galeria__lightbox" id="ampliar-1" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-1">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/carrossel-coleta-seletiva.jpg"
+             alt="Quatro lixeiras coloridas de coleta seletiva sobre a grama: vermelha, amarela, azul e verde."
+             width="1280" height="853">
+        <p id="legenda-ampliar-1">Coleta seletiva separa papel, plástico, vidro e metal antes da cooperativa.</p>
+      </div>
+    </div>
+
+    <div class="galeria__lightbox" id="ampliar-2" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-2">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/carrossel-cooperativa.svg"
+             alt="Ilustração de três catadoras e catadores diante de um galpão de cooperativa, com sacolas e carrinho de materiais."
+             width="560" height="440">
+        <p id="legenda-ampliar-2">Na cooperativa, o material separado vira renda digna.</p>
+      </div>
+    </div>
+
+    <div class="galeria__lightbox" id="ampliar-3" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-3">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/carrossel-ponto-verde.jpg"
+             alt="Homem depositando garrafa de vidro em contêineres verdes de coleta, ao lado de lixeira azul."
+             width="1280" height="853">
+        <p id="legenda-ampliar-3">Ponto Verde no Bairro recebe recicláveis de moradores e comércios.</p>
+      </div>
+    </div>
+
+    <div class="galeria__lightbox" id="ampliar-4" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-4">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/carrossel-oficina-escola.svg"
+             alt="Ilustração de oficina escolar: professora e duas crianças diante de um quadro sobre reciclagem."
+             width="560" height="440">
+        <p id="legenda-ampliar-4">Recicla na Escola ensina consumo consciente a crianças e jovens.</p>
+      </div>
+    </div>
+
+    <div class="galeria__lightbox" id="ampliar-5" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-5">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/galeria-separacao-casa.svg"
+             alt="Ilustração de casa com quatro recipientes de coleta seletiva na fachada e uma pessoa ao lado."
+             width="560" height="440">
+        <p id="legenda-ampliar-5">Em casa, limpe e seque o material antes de levar ao Ponto Verde.</p>
+      </div>
+    </div>
+
+    <div class="galeria__lightbox" id="ampliar-6" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-6">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/galeria-epi-catador.svg"
+             alt="Ilustração de catador com capacete, luvas e uniforme, representando o projeto Catador Cidadão."
+             width="560" height="440">
+        <p id="legenda-ampliar-6">Catador Cidadão apoia capacitação e equipamentos de proteção.</p>
+      </div>
+    </div>
+
+    <div class="galeria__lightbox" id="ampliar-7" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-7">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/galeria-mutirao.svg"
+             alt="Ilustração de mutirão com três pessoas e lixeiras coloridas em uma praça."
+             width="560" height="440">
+        <p id="legenda-ampliar-7">Mutirões reúnem voluntários para limpar praças e separar recicláveis.</p>
+      </div>
+    </div>
+
+    <div class="galeria__lightbox" id="ampliar-8" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-8">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/galeria-cidade-verde.svg"
+             alt="Ilustração de prédios urbanos com árvores e lixeiras da coleta seletiva na calçada."
+             width="560" height="440">
+        <p id="legenda-ampliar-8">Cidades mais limpas dependem de coleta seletiva e de quem faz a triagem.</p>
+      </div>
+    </div>
+
+    <div class="galeria__lightbox" id="ampliar-9" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-9">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/galeria-oficina-reciclagem.svg"
+             alt="Ilustração de quadro escolar com símbolo da reciclagem e crianças observando."
+             width="560" height="440">
+        <p id="legenda-ampliar-9">Oficinas mostram na prática o destino de cada tipo de material.</p>
+      </div>
+    </div>
+
+    <div class="galeria__lightbox" id="ampliar-10" role="dialog" aria-modal="true" aria-labelledby="legenda-ampliar-10">
+      <a class="galeria__lightbox-fundo" href="#galeria-conteudo" tabindex="-1" aria-hidden="true"></a>
+      <div class="galeria__lightbox-painel">
+        <a class="galeria__lightbox-fechar" href="#galeria-conteudo">Fechar</a>
+        <img src="img/galeria-empresa-parceira.svg"
+             alt="Ilustração de prédio empresarial e caminhão com caixas, sugerindo doação de equipamentos."
+             width="560" height="440">
+        <p id="legenda-ampliar-10">Empresas parceiras doam equipamentos e reforçam os Pontos Verdes.</p>
+      </div>
+    </div>
+
+    <section class="secao" aria-labelledby="titulo-videos">
+      <div class="container">
+        <h2 id="titulo-videos">Momentos em destaque</h2>
+        <p>
+          Cenas do acervo do EcoConecta, hospedadas junto com o site —
+          sem depender de player externo.
+          Áudio, vídeo com controles e transcrição ficam na página
+          <a href="midia.html">Mídia</a>.
+        </p>
+
+        <div class="galeria__videos">
+          <figure class="galeria__video">
+            <div class="galeria__video-quadro galeria__video-quadro--local">
+              <img
+                src="img/carrossel-coleta-seletiva.jpg"
+                alt="Lixeiras da coleta seletiva sobre a grama, com tampas vermelha, amarela, azul e verde."
+                width="1280"
+                height="853">
+            </div>
+            <figcaption class="galeria__legenda">
+              Separar em casa é o primeiro passo: papel, plástico, vidro e metal limpos
+              e secos seguem para a cooperativa, e não para o aterro.
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__video">
+            <div class="galeria__video-quadro galeria__video-quadro--local">
+              <img
+                src="img/carrossel-cooperativa.svg"
+                alt="Ilustração de catadoras e catadores diante do galpão da cooperativa."
+                width="560"
+                height="440">
+            </div>
+            <figcaption class="galeria__legenda">
+              Na cooperativa, o material separado vira renda digna — o elo entre
+              moradores, escolas e o trabalho de catadoras e catadores.
+            </figcaption>
+          </figure>
+        </div>
+
+        <p>
+          <a class="link-seta" href="midia.html">Ver mídia com transcrição<span class="sr-only"> na página Mídia</span></a>
+        </p>
+      </div>
+    </section>
+
+    <section class="chamada" aria-labelledby="titulo-chamada">
+      <div class="container chamada__interno">
+        <h2 id="titulo-chamada">Quer aparecer nesta história?</h2>
+        <p>
+          Seja voluntário, peça uma oficina para sua escola ou apoie uma cooperativa.
+          Juntos já destinamos 48 t de recicláveis por mês — dados fictícios, criados para fins acadêmicos.
+        </p>
+        <a class="botao botao--claro" href="contato.html">Entrar em contato</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__interno">
+      <div>
+        <p class="rodape__titulo">EcoConecta</p>
+        <p>Reciclagem com inclusão de catadores.</p>
+        <address>
+          Rua Exemplo, 100 – São Paulo, SP<br>
+          <a href="mailto:contato@ecoconecta.exemplo">contato@ecoconecta.exemplo</a><br>
+          <a href="tel:+5511900000000">(11) 90000-0000</a>
+        </address>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <p class="rodape__titulo">Navegue</p>
+        <ul class="rodape__links">
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="rodape__titulo">Projeto acadêmico</p>
+        <p>Site desenvolvido para a disciplina Desenvolvimento Front-end para Web – UNICID, 2026.</p>
+        <p>Organização e dados fictícios.</p>
+      </div>
+    </div>
+    <p class="rodape__copy">&copy; 2026 Equipe EcoConecta</p>
+  </footer>
+
+</body>
+</html>

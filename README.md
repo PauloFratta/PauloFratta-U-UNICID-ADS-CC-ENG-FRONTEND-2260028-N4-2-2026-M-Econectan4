@@ -1,6 +1,16 @@
 Link do Ecoconectan4 na hospedagem Railway:
 https://ecoconectan4.up.railway.app/
 
+## Publicar (GitHub → Railway)
+
+1. Faça push deste repositório no GitHub (inclua `package.json`, `package-lock.json`, `server.js` e `railway.toml`).
+2. No Railway, conecte o repositório; o start command é `npm start` (já definido em `railway.toml`).
+3. Variáveis no painel do Railway (nunca no Git): `PORT` é definido pela plataforma; opcional `CHAVE_IA` só no servidor.
+4. Healthcheck: `GET /health` deve responder `ok`.
+5. Localmente: `npm install` e `npm start` → http://127.0.0.1:3000
+
+O site usa só arquivos do repositório (`*.html`, `css/`, `img/`, `js/`). Sem CDN de framework e sem chave de API no front-end.
+
 # U-UNICID-ADS-CC-ENG-FRONTEND-2260028-N4-2-2026-M-Econectan4
 
 # Plano de contexto e escopo — EcoConecta

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" width="560" height="440">
+  <title>Empresa parceira doando equipamento</title>
+  <rect width="560" height="440" fill="#E3EFE8"/>
+  <rect x="80" y="120" width="200" height="220" rx="8" fill="#12233A"/>
+  <rect x="100" y="150" width="40" height="40" fill="#F5F3EC"/>
+  <rect x="160" y="150" width="40" height="40" fill="#F5F3EC"/>
+  <rect x="220" y="150" width="40" height="40" fill="#F5F3EC"/>
+  <rect x="100" y="210" width="40" height="40" fill="#F5F3EC"/>
+  <rect x="160" y="210" width="40" height="40" fill="#F5F3EC"/>
+  <rect x="220" y="210" width="40" height="40" fill="#F5F3EC"/>
+  <rect x="150" y="280" width="60" height="60" fill="#12775A"/>
+  <rect x="340" y="200" width="140" height="90" rx="10" fill="#A84612"/>
+  <rect x="360" y="170" width="40" height="40" rx="6" fill="#FFFDF8" stroke="#0E5C46" stroke-width="4"/>
+  <rect x="420" y="170" width="40" height="40" rx="6" fill="#FFFDF8" stroke="#0E5C46" stroke-width="4"/>
+  <circle cx="370" cy="300" r="18" fill="#12233A"/>
+  <circle cx="450" cy="300" r="18" fill="#12233A"/>
+  <circle cx="370" cy="300" r="7" fill="#F5F3EC"/>
+  <circle cx="450" cy="300" r="7" fill="#F5F3EC"/>
+  <path d="M310 260 h40" stroke="#12775A" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" width="560" height="440">
+  <title>Cidade com coleta seletiva e áreas verdes</title>
+  <rect width="560" height="440" fill="#E3EFE8"/>
+  <rect x="60" y="200" width="80" height="160" fill="#12233A"/>
+  <rect x="160" y="150" width="90" height="210" fill="#0E5C46"/>
+  <rect x="270" y="180" width="70" height="180" fill="#12775A"/>
+  <rect x="360" y="130" width="100" height="230" fill="#12233A"/>
+  <rect x="80" y="230" width="18" height="22" fill="#F5F3EC"/>
+  <rect x="110" y="230" width="18" height="22" fill="#F5F3EC"/>
+  <rect x="80" y="270" width="18" height="22" fill="#F5F3EC"/>
+  <rect x="110" y="270" width="18" height="22" fill="#F5F3EC"/>
+  <rect x="185" y="180" width="20" height="24" fill="#F5F3EC"/>
+  <rect x="220" y="180" width="20" height="24" fill="#F5F3EC"/>
+  <rect x="185" y="230" width="20" height="24" fill="#F5F3EC"/>
+  <rect x="220" y="230" width="20" height="24" fill="#F5F3EC"/>
+  <rect x="290" y="210" width="18" height="22" fill="#F5F3EC"/>
+  <rect x="290" y="250" width="18" height="22" fill="#F5F3EC"/>
+  <rect x="385" y="160" width="22" height="26" fill="#F5F3EC"/>
+  <rect x="420" y="160" width="22" height="26" fill="#F5F3EC"/>
+  <rect x="385" y="210" width="22" height="26" fill="#F5F3EC"/>
+  <rect x="420" y="210" width="22" height="26" fill="#F5F3EC"/>
+  <circle cx="140" cy="340" r="28" fill="#1E8449"/>
+  <circle cx="300" cy="350" r="34" fill="#12775A"/>
+  <circle cx="440" cy="345" r="30" fill="#0E5C46"/>
+  <rect x="200" y="360" width="28" height="36" rx="4" fill="#1F5FA8"/>
+  <rect x="236" y="360" width="28" height="36" rx="4" fill="#C0392B"/>
+  <rect x="272" y="360" width="28" height="36" rx="4" fill="#1E8449"/>
+  <rect x="308" y="360" width="28" height="36" rx="4" fill="#E5B80B"/>
+</svg>

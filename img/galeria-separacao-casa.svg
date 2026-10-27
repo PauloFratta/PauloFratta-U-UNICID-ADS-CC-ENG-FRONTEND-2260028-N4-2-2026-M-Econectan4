@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" width="560" height="440">
+  <title>Separação de recicláveis em casa</title>
+  <rect width="560" height="440" fill="#E3EFE8"/>
+  <rect x="40" y="372" width="480" height="10" rx="5" fill="#12233A" opacity="0.12"/>
+  <path d="M120 210 L280 90 L440 210 V340 H120 Z" fill="#FFFDF8" stroke="#12775A" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="248" y="250" width="64" height="90" rx="6" fill="#12775A"/>
+  <rect x="150" y="300" width="48" height="40" rx="4" fill="#1F5FA8"/>
+  <rect x="210" y="300" width="48" height="40" rx="4" fill="#C0392B"/>
+  <rect x="302" y="300" width="48" height="40" rx="4" fill="#1E8449"/>
+  <rect x="362" y="300" width="48" height="40" rx="4" fill="#E5B80B"/>
+  <circle cx="174" cy="250" r="18" fill="#F2C89A"/>
+  <path d="M154 272 h40 v60 h-40 z" fill="#A84612"/>
+  <rect x="168" y="236" width="28" height="10" rx="3" fill="#12233A"/>
+</svg>
